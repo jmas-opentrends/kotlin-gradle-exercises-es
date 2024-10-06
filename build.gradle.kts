@@ -5,7 +5,6 @@ plugins {
 }
 
 tasks {
-
     val samplesWrappers by registering {
         doLast {
             val wrapperFiles = wrapper.get().run {
@@ -14,7 +13,7 @@ tasks {
             val hashes = wrapperFiles.mapValues { HashUtil.sha256(it.value) }
             file("samples").walk().filter { it.isFile && it.name in wrapperFiles }.forEach { sampleWrapperFile ->
                 wrapperFiles.getValue(sampleWrapperFile.name).let { wrapperFile ->
-                    if (HashUtil.sha256(sampleWrapperFile) != hashes.getValue(sampleWrapperFile.name)) {
+                    if (HashUtil.sha256(sampleWrapperFile) !== hashes.getValue(sampleWrapperFile.name)) {
                         logger.lifecycle("Updating ${sampleWrapperFile.relativeTo(rootDir)}")
                         wrapperFile.copyTo(sampleWrapperFile, overwrite = true)
                     }
