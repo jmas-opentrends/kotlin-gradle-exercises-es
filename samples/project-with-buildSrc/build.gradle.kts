@@ -1,20 +1,20 @@
-plugins {
-    // Apply the `my-plugin` defined in buildSrc/src/main/kotlin/my-plugin.gradle.kts
-    `my-plugin`
-}
+/**
+ * TODO: Instala el plugin `my-plugin` que hemos definido anteriormente.
+ */
 
-my {
-    flag.set(true)
-}
+/**
+ * TODO: Configura la extension `my` para que la propiedad `flag` sea `true`.
+ */
 
-withHelloTask()
 
-tasks.register("printProfile") {
-    description = "Uses the extension property and the extension functions defined in buildSrc. Use with -Pprofile=prod."
-    group = "sample"
+/**
+ * TODO: Aplica la extensión `withHelloTask` a este proyecto.
+ */
 
-    doLast {
-        println("The current profile is $profile")
-        logProfile()
-    }
-}
+
+/**
+ * TODO: (Opcional) Define una tarea llamada `printProfile` que imprima el valor de la propiedad `profile` y ejecute la
+ *  función `logProfile` definida en el archivo `buildSrc/src/main/kotlin/extensions.kt`.
+ *  Piensa que ya hemos instalado el plugin.
+ */
+

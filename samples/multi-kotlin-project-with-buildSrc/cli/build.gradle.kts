@@ -3,12 +3,14 @@ plugins {
     kotlin("jvm")
 }
 
-kotlinProject()
+/**
+ * TODO: Ejecutamos la funcion kotlinProject() para agregar las dependencias
+ */
 
 application {
-    mainClassName = "cli.Main"
+    mainClass.set("cli.Main")
 }
 
 dependencies {
-    compile(project(":core"))
+    implementation(project(":core"))
 }

@@ -1,13 +1,10 @@
-plugins {
-    application
-    kotlin("jvm")
-}
+/**
+ * TODO: Añade los plugins `application` y `kotlin("jvm")`.
+ *  Además, configura application para que el mainClass sea `cli.Main`.
+ */
 
-application {
-    mainClassName = "cli.Main"
-}
 
-dependencies {
-    compile(project(":core"))
-    compile(kotlin("stdlib"))
-}
+/**
+ * TODO: Añade las dependencias kotlin("stdlib") y project(":core"). Esta última
+ *  hace referencia al proyecto core de este multiproyecto.
+ */

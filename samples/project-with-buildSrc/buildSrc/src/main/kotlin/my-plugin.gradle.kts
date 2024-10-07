@@ -14,10 +14,12 @@
  * limitations under the License.
  */
 
-val my = extensions.create<MyProjectExtension>("my", project.objects)
+/**
+ * TODO: Define una extensión de Project llamada `my` y guardala en la variable del mismo nombre.
+ */
 
-tasks.register("myReport") {
-    doLast {
-        println("my.flag = ${my.flag.get()}")
-    }
-}
+
+/**
+ * TODO: registra la tarea `myReport` que imprime el valor de la propiedad `flag` del objeto `my`
+ */
+

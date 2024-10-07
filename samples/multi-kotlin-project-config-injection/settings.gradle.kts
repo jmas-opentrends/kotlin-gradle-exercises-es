@@ -1,2 +1,3 @@
-
-include("cli", "core")
+/**
+ * TODO: utiliza el método include para configurar los subproyectos.
+ */

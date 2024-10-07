@@ -1,6 +1,6 @@
 plugins {
     base
-    kotlin("jvm") version "1.3.70" apply false
+    kotlin("jvm") version "1.9.25" apply false
 }
 
 allprojects {
@@ -10,13 +10,6 @@ allprojects {
     version = "1.0"
 
     repositories {
-        jcenter()
-    }
-}
-
-dependencies {
-    // Make the root project archives configuration depend on every sub-project
-    subprojects.forEach {
-        archives(it)
+        mavenCentral()
     }
 }

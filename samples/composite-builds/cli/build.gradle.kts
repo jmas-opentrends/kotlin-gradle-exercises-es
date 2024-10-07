@@ -6,10 +6,12 @@ plugins {
 group = "org.gradle.kotlin.dsl.samples.composite-builds"
 version = "1.0"
 
-application {
-    mainClassName = "cli.Main"
-}
+/**
+ * TODO: configura el plugin `application` para que ejecute la clase `cli.Main`
+ */
 
-dependencies {
-    compile("composite-builds:core:1.0")
-}
+
+/**
+ * TODO: añade la dependencia `composite-builds:core:1.0` que apunta al proyecto `core`
+ */
+

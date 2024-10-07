@@ -2,4 +2,6 @@ plugins {
     kotlin("jvm")
 }
 
-kotlinProject()
+/**
+ * TODO: Ejecutamos la funcion kotlinProject() para agregar las dependencias
+ */

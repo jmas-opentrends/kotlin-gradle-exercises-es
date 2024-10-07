@@ -1,55 +1,52 @@
-Gradle Kotlin DSL Samples
-=========================
+# Ejercicios de Gradle con Kotlin DSL
 
-[![License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
+Este ejercicio esta compuesto de diferentes partes, cada una de ellas ofreciendo una plataforma para poder
+practicar diferentes funcionalidades de Gradle y Kotlin DSL.
+A continuación se detallan los objetivos y las instrucciones para comenzar.
 
-Welcome! The _Gradle Kotlin DSL_ provides support for writing [Gradle](http://gradle.org) build scripts using JetBrains' [Kotlin](http://kotlinlang.org) language. It aims to provide Gradle users with a rich, flexible and statically-typed approach to developing build logic in conjunction with the best IDE and tooling experience possible.
+## Objetivos de Aprendizaje
 
+- Comprender y aplicar conceptos avanzados de programación funcional.
+- Practicar la implementación de funciones de colección y de orden superior.
+- Escribir pruebas unitarias completas que incluyan casos borde.
+- Familiarizarse con flujos de trabajo colaborativos utilizando Git y GitHub.
 
-Getting Started
----------------
+## Instrucciones para Comenzar
 
-The fastest way to get up and running with a Kotlin-based Gradle build is to use [gradle init](https://docs.gradle.org/current/userguide/build_init_plugin.html)
+### 1. Realiza un Fork del Repositorio
 
+- Haz clic en el botón **"Fork"** en la esquina superior derecha del repositorio para crear una copia en tu cuenta de GitHub.
+
+### 2. Clona tu Repositorio Forkeado
+
+```bash
+git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+cd nombre-del-repositorio
 ```
-gradle init --dsl kotlin
-```
 
-or, if you don't have Gradle installed already, you can generate Gradle builds online at https://gradle-initializr.cleverapps.io/.
+### 3. A trabajar
 
-The Gradle Kotlin DSL is documented in a [dedicated chapter](https://docs.gradle.org/current/userguide/kotlin_dsl.html) in the Gradle user manual.
+- Ve por cada uno de los proyectos, recomendamos abrir en el IntelliJ IDEA o Android Studio cada uno
+  de los proyectos por separado.
+- En cada proyecto encontraras un README con las instrucciones generales
+- En los ficheros que se indican encontraras comentarios con `TODO` que deberás completar.
 
-Moreover, the Gradle [user manual](https://docs.gradle.org/current/userguide/userguide.html) and [guides](https://gradle.org/guides/) contain build script excerpts that demonstrate both the Groovy DSL and the Kotlin DSL. This is the best place where to find how to do this and that with the Gradle Kotlin DSL; and it covers all Gradle features from [using plugins](https://docs.gradle.org/current/userguide/plugins.html#plugins) to [customizing the dependency resolution behavior](https://docs.gradle.org/current/userguide/customizing_dependency_resolution_behavior.html#customizing_dependency_resolution_behavior). All snippets in the user manual demonstrate both Groovy and Kotlin DSL.
+## Flujo de Trabajo Recomendado
 
-If you are looking into migrating an existing build to the Gradle Kotlin DSL, please also check out the [migration guide](https://guides.gradle.org/migrating-build-logic-from-groovy-to-kotlin/).
+1. **Fork**: Crea una copia personal del repositorio para trabajar independientemente.
+2. **Work**: Implementa las funciones y pruebas en tu entorno local.
+3. **Test Locally**: No hay tests automaticos para este ejercicio. Basicamente los scripts deben acabar y hacer lo que se espera de ellos.
+4. **Push**: Sube tus cambios a tu repositorio en GitHub.
+5. **Pull Request**: Envía un Pull Request al repositorio original para revisión.
 
-You can read more about the project in our [announcement blog post](http://gradle.org/blog/kotlin-meets-gradle) and check out the [frequently asked questions](https://github.com/gradle/kotlin-dsl/wiki/Frequently-Asked-Questions) in the project wiki.
+## Orden de los Ejericios
 
+1. [task-dependencies](samples/task-dependencies)
+2. [buildSrc-plugin](samples/buildSrc-plugin)
+3. [project-with-buildSrc](samples/project-with-buildSrc)
+4. [precompiled-script-plugin](samples/precompiled-script-plugin)
+5. [composite-builds](samples/composite-builds)
+6. [multi-kotlin-project-config-injection](samples/multi-kotlin-project-config-injection)
+7. [multi-kotlin-project-with-buildSrc](samples/multi-kotlin-project-with-buildSrc)
 
-Issue Tracking
---------------
-
-This repository is only for Gradle Kotlin DSL Samples.
-
-Found a bug in one of the samples, have an idea for an improvement or for a new sample? Feel free to [add an issue](../../issues).
-
-If you're dealing with what you believe to be an issue with Gradle or the Gradle Kotlin DSL, please [open an issue](https://github.com/gradle/gradle/issues) on the `gradle/gradle` repository.
-
-If you're dealing with what you believe to be an issue with Kotlin itself or the Kotlin Plugin for IDEA, you may want to search JetBrains' [YouTrack](https://youtrack.jetbrains.com/issues/KT) first to see if it is a known issue. In any case, feel free to add an issue here for it as well. We'd like to know and track what our users are experiencing regardless whether the issue is with the Gradle Kotlin DSL or with Kotlin itself.
-
-
-Staying in Touch
-----------------
-
-Come chat with us in the #kotlin-dsl channel of the public [Gradle Community Slack](https://join.slack.com/t/gradle-community/shared_invite/enQtNDE3MzAwNjkxMzY0LTYwMTk0MWUwN2FiMzIzOWM3MzBjYjMxNWYzMDE1NGIwOTJkMTQ2NDEzOGM2OWIzNmU1ZTk5MjVhYjFhMTI3MmE) instance.
-
-
-License
--------
-Like the rest of Gradle, the _Gradle Kotlin DSL Samples_ are released under version 2.0 of the [Apache License](LICENSE.md).
-
-
-Contributing
-------------
-
-Please see [CONTRIBUTING.md](.github/CONTRIBUTING.md) for details of how to build and contribute to _Gradle Kotlin DSL Samples_.
+¡A compilar!

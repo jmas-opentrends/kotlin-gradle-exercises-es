@@ -1,2 +1,4 @@
-
-include("cli", "core")
+/**
+ * TODO: Añade los proyectos necesarios. Recuerda que `buildSrc` no hace falta
+ *  ya que se añade automáticamente.
+ */

@@ -2,7 +2,7 @@
  * An example Gradle task.
  */
 open class GreetingTask : DefaultTask() {
-
+    @get:Input
     val message = project.objects.property<String>()
 
     @TaskAction
@@ -11,38 +11,49 @@ open class GreetingTask : DefaultTask() {
 
 tasks {
 
-    // `hello` is a `TaskProvider<GreetingTask>`
-    val hello by registering(GreetingTask::class) {
-        message.set("Hello!")
-    }
+    /**
+     * TODO: Añadir una tarea `hello` del tipo `GreetingTask`
+     *  que imprima "Hello!".
+     *
+     *  val <task_name> by registering(<task_type>::class)
+     */
 
-    // `goodbye` is a `TaskProvider<GreetingTask>`
-    val goodbye by registering(GreetingTask::class)
 
-    // Every `NamedDomainObjectProvider<T>` can be lazily configured as follows
-    goodbye {
-        dependsOn(hello)
-    }
+    /**
+     * TODO: Añadir una tarea `goodbye` del tipo `GreetingTask`
+     *  no configures nada por defecto.
+     */
 
-    // Existing container elements can be lazily configured via the `String` invoke DSL
-    "goodbye"(GreetingTask::class) {
-        message.set("Goodbye!")
-    }
 
-    // Regular API members are also available
-    register("chat")
+    /**
+     * TODO: haz que la tarea `goodbye` dependa de la tarea `hello`.
+     */
+
+
+    /**
+     * TODO: Ahora, sin usar la variable `goodbye`, utiliza el método
+     *  `named<T>(name: String)` para obtener la tarea `goodbye` y
+     *  configurala para que imprima "Goodbye!".
+     */
+
+
+    /**
+     * TODO: Finalmente, añade una tarea `chat` que dependa de `goodbye`.
+     *  Para ello puedes utilizar `tasks.register`. Recuerda que ya estamos
+     *  en el bloque `tasks`.
+     */
+
 }
 
-// ...
-
+/**
+ * TODO: Abre un nuevo bloque de tareas. No tiene mucho sentido
+ *  pero lo hacemos para practicar.
+ */
 tasks {
 
-    // Existing container elements can be lazily brought into scope
-    val goodbye by existing
+    /**
+     * TODO: Utiliza el método `existing<T>(name: String)` para obtener
+     *  la tarea `goodbye` y añade una dependencia a la tarea `chat`.
+     */
 
-    "chat" {
-        dependsOn(goodbye)
-    }
 }
-
-defaultTasks("chat")

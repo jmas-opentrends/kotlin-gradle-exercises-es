@@ -2,22 +2,16 @@ import org.gradle.api.*
 import org.gradle.api.tasks.*
 import org.gradle.kotlin.dsl.*
 
-open class HelloTask : DefaultTask() {
+/**
+ * TODO: Define la clase HelloTask que extiende de DefaultTask.
+ *  Esta debe definir un método (@TaskAction) que imprima el nombre
+ *  del proyecto.
+ */
 
-    init {
-        group = "My"
-        description = "Prints a description of ${project.name}."
-    }
-
-    @TaskAction
-    fun run() {
-        println("I'm ${project.name}")
-    }
-}
 
 /**
- * Declares a [HelloTask] named `hello`.
+ * TODO: Define una extensión de Project llamada withHelloTask que
+ *  defina una tarea llamada "hello" de tipo HelloTask.
+ *
  */
-fun Project.withHelloTask() =
-    tasks.register("hello", HelloTask::class)
 
