@@ -6,10 +6,11 @@ A continuación se detallan los objetivos y las instrucciones para comenzar.
 
 ## Objetivos de Aprendizaje
 
-- Comprender y aplicar conceptos avanzados de programación funcional.
-- Practicar la implementación de funciones de colección y de orden superior.
-- Escribir pruebas unitarias completas que incluyan casos borde.
-- Familiarizarse con flujos de trabajo colaborativos utilizando Git y GitHub.
+- Ver las diferentes funcionalidades de Gradle
+- Practicar con el Kotlin DSL de Gradle
+- Establecer dependencias entre tareas
+- Configurar proyectos multi-proyecto
+- Crear plugins de Gradle
 
 ## Instrucciones para Comenzar
 
